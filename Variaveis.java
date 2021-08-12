@@ -7,5 +7,14 @@ public class Variaveis {
         boolean semaforoAberto = true;
         long celulares = 100000L;
         char genero = 'M';
+
+        // Exibição das variáveis:
+        System.out.println("Idade: "+idade);
+        System.out.println("Habitantes: "+habitantes);
+        System.out.println("Salário: "+salario);
+        System.out.println("Nome: "+nome);
+        System.out.println("Semáforo aberto: "+ semaforoAberto);
+        System.out.println("Qtd de celulares: "+celulares);
+        System.out.println("Gênero: "+genero);
     }
 }
