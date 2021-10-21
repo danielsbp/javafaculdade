@@ -5,9 +5,9 @@ public class Programa {
         // Em sua declaração, falamos sobre o tipo, seu nome e o valor para o computador
         // em linguagens de programação de tipagem forte.
         //  Ex:
-        int nome = "Daniel";
+        String nome = "Daniel";
         // Objeto:
-        // É um tipo de variável especial que pode armazenar atributos e métodos, que são basicamente
+        // É uma variável especial que pode armazenar atributos e métodos, que são basicamente
         // variáveis e funções respectivamente. Todo objeto é instanciado por uma classe,
         // porém, algumas linguagens permitem a criação de objetos sem instanciamento.
         // No java, primeiro escrevemos uma classe como o Atributo.java e depois instanciamos
@@ -16,11 +16,12 @@ public class Programa {
         Atributo at = new Atributo();
         // Atributo:
         // Basicamente, é uma váriavel dentro de um objeto. No java, ela possui uma declaração diferente,
-        // graças ao conceito de encapsulamento. 
-        // Ex: private int nome = "Daniel";
+        // graças ao conceito de encapsulamento, onde colocamos o qualificador, seu tipo, o nome e o valor.
+        // Ex: private String nome = "Daniel";
         // Para acessar um atributo, devemos usar a seguinte sintaxe:
         // objeto.atributo;
         // Este uso, retornará o valor que foi atribuido à ele.
-        System.out.print(at.numero1);
+        System.out.println(at.numero2);
+        System.out.println(nome);
     }
 }
