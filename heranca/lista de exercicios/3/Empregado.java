@@ -23,4 +23,7 @@ public class Empregado extends Pessoa {
         this.imposto = imposto;
     }
 
+    public double calcularSalario(){
+        return getSalarioBase() - getImposto();        
+    }
 }
