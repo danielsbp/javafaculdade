@@ -14,7 +14,8 @@ public class Principal {
         imovel3.setPreco(1500000);
         imovel3.setDesconto(20000);
 
-        System.out.println(String.format("Imóvel Velho - Endereço: %s, Preço: R$ %f, Desconto: R$ %f", imovel3.getEndereco(), imovel3.getPreco(), imovel3.getDesconto()));
-    
+        System.out.println(String.format("Imóvel Velho - \n Endereço: %s, Preço: R$ %f, Desconto: R$ %f", imovel3.getEndereco(), imovel3.getPreco(), imovel3.getDesconto()));
+        System.out.println(String.format("Imóvel Novo - Endereço: %s, Preço: R$ %f, Adicional: R$ %f", imovel2.getEndereco(), imovel2.getPreco(), imovel2.getAdicional()));
+        System.out.println("Nome: " + "João");
     }
 }

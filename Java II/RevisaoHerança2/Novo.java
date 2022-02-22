@@ -8,4 +8,5 @@ public class Novo extends Imovel{
     public double getAdicional() {
         return this.adicional;
     }
+    
 }
