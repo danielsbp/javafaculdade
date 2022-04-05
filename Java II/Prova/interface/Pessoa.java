@@ -1,4 +1,4 @@
-public class Pessoa implements IPessoa{
+public abstract class Pessoa implements IPessoa{
     //List<String> testList = new ArrayList<String>();
 
     public String nome;
@@ -22,6 +22,17 @@ public class Pessoa implements IPessoa{
     }
     public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
+    }
+    public boolean adicionar() {
+        return true;
+    }
+
+    public boolean excluir() {
+        return true;
+    }
+
+    public int pesquisar() {
+        return 0;
     }
     
 }

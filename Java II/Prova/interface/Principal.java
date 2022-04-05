@@ -16,6 +16,21 @@ public class Principal {
         aluno.adicionar(7);
 
         System.out.println("Notas do aluno " + aluno.getNome() + ": " + aluno.getNotas());
-        
+
+        professor.setNome("Isaque");
+        professor.setCpf("1234");
+        professor.setDataNascimento("29/06/1989");
+
+        System.out.println("");
+
+        System.out.println("Professor: " + professor.getNome());
+        System.out.println("Data de Nascimento: " + aluno.getDataNascimento());
+        System.out.println("CPF: "+aluno.getCpf());
+        // Adicionar do professor adiciona turmas
+        professor.adicionar("3ªA");
+        professor.adicionar("2ªB");
+        professor.adicionar("1ªD");
+
+        System.out.println("Turmas do professor: " + professor.getNome() + ": " + professor.getTurmas());
     }
 }

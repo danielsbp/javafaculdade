@@ -1,23 +1,31 @@
 import java.util.ArrayList;
-
+import java.util.List;
 public class Professor extends Pessoa{
     List<String> turmas = new ArrayList<String>();
-    @Override
+    
     public void adicionar(String turma) {
-        notas.add(nota);
+        turmas.add(turma);
     }
-    @Override
-    public void excluir(String turmasInput) {
+    
+    public List<String> getTurmas() {
+        return turmas;
+    }
+
+    public void setTurmas(List<String> turmas) {
+        this.turmas = turmas;
+    }
+
+    public void excluir(String turmaInput) {
         int index = -1;
-        for (ArrayList turma : turmas) {
+        for (String turma : turmas) {
             index++;
             if (turma == turmaInput) {
                 turmas.remove(index);
             }
         }
     }
-    @Override
-    public int pesquisar(int index) {
-        return turmas[index];
+    
+    public String pesquisar(int index) {
+        return turmas.get(index);
     }
 }

@@ -1,31 +1,31 @@
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class Aluno extends Pessoa{
-    List<Int> notas = new ArrayList<Int>();
+    List<Integer> notas = new ArrayList<Integer>();
 
-    public List<Int> getNotas() {
+    public List<Integer> getNotas() {
         return notas;
     }
 
-    public void setNotas(List<Int> notas) {
+    public void setNotas(List<Integer> notas) {
         this.notas = notas;
     }
-    @Override
-    public void adicionar(Int nota) {
+
+    public void adicionar(int nota) {
         notas.add(nota);
     }
-    @Override
-    public void excluir(Int notaInput) {
+    public void excluir(int notaInput) {
         int index = -1;
-        for (ArrayList nota : notas) {
+        for (int nota : notas) {
             index++;
             if (nota == notaInput) {
                 notas.remove(index);
             }
         }
     }
-    @Override
     public int pesquisar(int index) {
-        return notas[index];
+        return notas.get(index);
     }
 }
